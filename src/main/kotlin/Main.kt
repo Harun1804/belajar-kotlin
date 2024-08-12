@@ -1,8 +1,10 @@
 package org.example
 
 fun main() {
-//    Basic().listOfVariables()
-//    Basic().listOfDataTypes()
-//    Basic().listOfCollection()
-    Exercise().ofCollection()
+//    BasicController().listOfVariables()
+//    BasicController().listOfDataTypes()
+//    BasicController().listOfCollection()
+//    BasicController().listOfConditionalFlow()
+//    ExerciseController().ofCollection()
+    ExerciseController().ofConditionalFlow()
 }
