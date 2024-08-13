@@ -2,6 +2,7 @@ package org.example
 
 import org.example.Basic.ListOfCollections
 import org.example.Basic.ListOfFlow
+import org.example.Basic.ListOfFunctions
 import org.example.Basic.ListOfLoops
 
 class BasicController {
@@ -54,5 +55,29 @@ class BasicController {
         ListOfLoops().listLoop()
         ListOfLoops().whileLoop()
         ListOfLoops().doWhileLoop()
+    }
+
+    fun listOfFunction() {
+        // Basic function
+        ListOfFunctions().basic()
+
+        // Function with return
+        val hasReturn = ListOfFunctions().hasReturn()
+        println(hasReturn)
+
+        // Function with parameters
+        ListOfFunctions().hasParameters("Kotlin")
+
+        // Function with default parameters
+        ListOfFunctions().hasDefaultParameter("Kotlin")
+        ListOfFunctions().hasDefaultParameter("Kotlin", "Warning")
+
+        // Function with multiple parameters
+        ListOfFunctions().hasMultipleParameters("Kotlin", "Java", "Python")
+
+        // Function with lambda
+        ListOfFunctions().hasLambda("Kotlin") { name ->
+            println("Hello, $name")
+        }
     }
 }

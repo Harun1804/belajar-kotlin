@@ -6,7 +6,9 @@ fun main() {
 //    BasicController().listOfCollection()
 //    BasicController().listOfConditionalFlow()
 //    BasicController().listOfLoops()
+//    BasicController().listOfFunction()
 //    ExerciseController().ofCollection()
 //    ExerciseController().ofConditionalFlow()
-    ExerciseController().ofLoop()
+//    ExerciseController().ofLoop()
+    ExerciseController().ofFunction()
 }
