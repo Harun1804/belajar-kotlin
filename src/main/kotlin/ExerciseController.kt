@@ -50,5 +50,18 @@ class ExerciseController {
         empGen.minSalary = 50
         empGen.maxSalary = 100
         println(empGen.generateRandomEmployee())
+
+        // Null safety
+        println((1..5).sumOf { id -> salaryById(id) })
     }
+
+    fun employeeById(id: Int) = when(id) {
+        1 -> Employee("Mary", 20)
+        2 -> null
+        3 -> Employee("John", 21)
+        4 -> Employee("Ann", 23)
+        else -> null
+    }
+
+    fun salaryById(id: Int) = employeeById(id)?.salary ?: 0
 }
