@@ -10,5 +10,6 @@ fun main() {
 //    ExerciseController().ofCollection()
 //    ExerciseController().ofConditionalFlow()
 //    ExerciseController().ofLoop()
-    ExerciseController().ofFunction()
+//    ExerciseController().ofFunction()
+    ExerciseController().ofClass()
 }
