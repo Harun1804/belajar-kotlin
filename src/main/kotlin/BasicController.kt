@@ -2,6 +2,7 @@ package org.example
 
 import org.example.Basic.ListOfCollections
 import org.example.Basic.ListOfFlow
+import org.example.Basic.ListOfLoops
 
 class BasicController {
     fun listOfVariables() {
@@ -46,5 +47,12 @@ class BasicController {
     fun listOfConditionalFlow() {
         ListOfFlow().ifCondition()
         ListOfFlow().whenCondition()
+    }
+
+    fun listOfLoops() {
+        ListOfLoops().forLoop()
+        ListOfLoops().listLoop()
+        ListOfLoops().whileLoop()
+        ListOfLoops().doWhileLoop()
     }
 }
